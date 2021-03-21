@@ -1,0 +1,47 @@
+<div id="map"></div>
+<div id="right-panel">
+  <div>
+    <b>MULTI-VEHICLE</b><br>
+    <b>Start:</b>
+    <select id="start">
+      <option value="Nagpur, Maharashtra">Nagpur, Maharashtra</option>
+    </select>
+    <br>
+    <b>End:</b>
+    <select id="end">
+      <option value="Nagpur, Maharashtra">Nagpur, Maharashtra</option>
+    </select>
+    <br>
+    <b> Select Optimization Problem:</b>
+    <select id="opt_prob">
+      <option value="a">Multi Vehicle Routing Problem</option>
+      <option value="b">Capacitated Vehicle Routing Problem</option>
+      <option value="c">Capacitated Time Window VRP</option>
+    </select>
+    <br>
+    <b> Select No. of Vehicles:</b>
+    <select id="nVeh">
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <br>
+    <b> Individual Vehicle Capacity:</b>
+    <select id="vCap">
+      <option value="100">100</option>
+      <option value="80">80</option>
+    </select>
+    <br>
+    <input type="submit" id="submit">
+  </div>
+</div>
+<div id="summary-panel">
+  <b>Route Summary</b>
+  <div id="directions-panel"></div>
+</div>
+
+<div id="target-id"></div>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxKSw9FJD7o0XQg736WCDfU8u1BqTR7GQ&callback=initMap">
+
+</script>
